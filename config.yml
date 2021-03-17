@@ -1,0 +1,16 @@
+title: MyFlight_2021_GS
+description: MyFlight - Estudo da disciplina de POO
+template:
+  repo: myflight_2021_gs-template
+  name: myflight_2021_gs
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
